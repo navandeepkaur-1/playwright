@@ -32,6 +32,7 @@ function App() {
 
   return (
     <main className="container">
+      <h1> Welcome! </h1>
       <section className="card">
         <h1>Contact Form</h1>
         <p>Enter your details and submit the form.</p>
