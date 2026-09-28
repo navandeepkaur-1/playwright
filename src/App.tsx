@@ -33,7 +33,7 @@ function App() {
   return (
     <main className="container">
       <section className="card">
-        <h1>Contact Form</h1>
+        <h1>Registration Form</h1>
         <p>Enter your details and submit the form.</p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
