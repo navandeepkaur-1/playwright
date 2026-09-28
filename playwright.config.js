@@ -9,6 +9,7 @@ export default defineConfig({
   reporter: process.env.CI ? "github" : "html",
   use: {
     baseURL: "http://127.0.0.1:5173",
+    screenshot: 'only-on-failure',
     trace: "on-first-retry"
   },
   webServer: {

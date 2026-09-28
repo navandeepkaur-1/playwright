@@ -35,51 +35,17 @@ function App() {
       <section className="card">
         <h1>Contact Form</h1>
         <p>Enter your details and submit the form.</p>
-
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Enter your name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-
+          <input id="name" name="name" type="text" placeholder="Enter your name" value={formData.name}  onChange={handleChange} required />
           <label htmlFor="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Enter your email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
+          <input id="email" name="email"type="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
 
           <label htmlFor="phone">Phone</label>
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            placeholder="Enter your phone number"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-          />
+          <input id="phone" name="phone" type="tel"placeholder="Enter your phone number" value={formData.phone} onChange={handleChange} required  />
 
           <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Enter your message"
-            rows="4"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
+          <textarea  id="message" name="message" placeholder="Enter your message" rows="4" value={formData.message} onChange={handleChange} required />
 
           <div className="actions">
             <button type="submit">Submit</button>
