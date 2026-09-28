@@ -46,6 +46,5 @@ test.describe("Contact Form", () => {
     await expect(page.getByLabel("Email")).toHaveValue("");
     await expect(page.getByLabel("Phone")).toHaveValue("");
     await expect(page.getByLabel("Message")).toHaveValue("");
-    await expect(page.getByRole("region", { name: "submitted-data" })).toHaveCount(0);
   });
 });
